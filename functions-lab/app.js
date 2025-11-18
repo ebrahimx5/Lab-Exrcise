@@ -215,3 +215,67 @@ const basicCalculator = (num1, num2, operation)=>{
 }
 
 console.log(basicCalculator( 10, 2, 'multiply'))
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+*/
+
+const calculateGrade = (numerical)=>{
+    if (numerical<=100){
+    
+        if (numerical>=90) {
+            return 'A  (great jop)'
+        }
+        else if (numerical>=80 && numerical <=89) {
+            return 'exrcise 10 : B  (good jop)'
+        }
+        else if (numerical>=70 && numerical<=79) {
+            return `exrcise 10 : C  (you need to study more)`
+        }
+        else if (numerical>=60 && numerical<=69) {
+            return `exrcise 10 : D  (be carful) `
+        }
+        else if (numerical<= 59) {
+            return `exrcise 10 : F  (FFFFailed )`
+        }
+        else {
+            return `exrcise 10 : invaild input`
+        }
+
+    }
+    else {
+        return `invaild input : dgress must between 0 and 100 `
+    }
+}
+
+console.log(calculateGrade(36))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
